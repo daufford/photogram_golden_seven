@@ -1,0 +1,17 @@
+<img src="<%= @photo.source %>">
+<p>
+<%= @photo.caption %>
+</p>
+<table class="table">
+  <tr>
+    <td>
+      <a href="http://localhost:3000/photos/">Back</a>
+    </td>
+    <td>
+      <a href="http://localhost:3000/photos/<%= @photo.id %>/edit">Edit</a>
+    </td>
+    <td>
+      <a href="http://localhost:3000/delete_photo/<%= @photo.id %>">Delete</a>
+    </td>
+  </tr>
+</table>
